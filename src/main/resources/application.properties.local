@@ -14,3 +14,20 @@ spring.datasource.password=gti525
 spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
 spring.jpa.hibernate.ddl-auto = update
 spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults = false
+
+web.url="https://hello-expertus-web.herokuapp.com/"
+default.language=en
+
+server.port=8080
+
+spring.main.banner-mode=off
+logging.level.org.springframework=ERROR
+
+spring.datasource.platform=postgres
+spring.datasource.url=jdbc:postgresql://ec2-54-225-241-25.compute-1.amazonaws.com:5432/ddtj8qoe4g117
+spring.datasource.username=opkaapprghrxfw
+spring.datasource.password=e36867d8fdf665cf6196496bc56c92041cc44b7b4df5ce6e4c44511783fc6737
+
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.hibernate.ddl-auto = update
+spring.jpa.properties.hibernate.temp.use_jdbc_metadata_defaults = false
