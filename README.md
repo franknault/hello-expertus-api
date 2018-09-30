@@ -19,7 +19,7 @@ To run the API :
 2. Open your favorite command line env;
 3. Install dependancies with : mvn clean install
 4. Change "application.properties" according to your PostgresSQL installation
-4a. Run the jar directly with : java -jar <the-jar-name>.jar / Run the projet with : mvn spring-boot:run
+5. Run the jar directly with : java -jar <the-jar-name>.jar / Run the projet with : mvn spring-boot:run
 
 ## Verify the API status
 
