@@ -18,7 +18,7 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         String url = env.getProperty("web.url");
         registry.addMapping("/api/**")
-                .allowedOrigins(url)
+                .allowedOrigins(url, "http://localhost:4200")
                 .allowedMethods("GET", "POST", "PUT", "DELETE");
     }
 }
