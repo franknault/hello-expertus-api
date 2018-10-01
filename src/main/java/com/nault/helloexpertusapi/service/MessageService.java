@@ -29,9 +29,13 @@ public class MessageService implements IMessageService {
     @Override
     public Message findByLanguage(String language) {
         if (!validator.validate(language)) {
-            return context.findByLanguage(language);
-            //return repo.findByLanguage(config.getDefaultLang());
+            Message message = context.findByLanguage(language);
+            if (message == null) {
+                return repo.findByLanguage(config.getDefaultLang());
+            }
+            return message;
         }
+
         return repo.findByLanguage(language);
     }
 }

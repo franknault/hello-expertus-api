@@ -21,7 +21,7 @@ public class GoogleApiStrategy implements PersistanceStrategy {
             Message message = new Message( 99L, text, language);
             return message;
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            // In case of an error, returning null will result in displaying the default language : "en"
             return null;
         }
 
