@@ -23,7 +23,7 @@ public class MessageController {
      * @param language Language to retrieve the message
      * @return JSON format of the translated message
      */
-    //@CrossOrigin(origins = "http://localhost:4200")
+    @CrossOrigin(origins = "https://hello-expertus-web.herokuapp.com")
     @GetMapping("/api/message")
     public Message getMessage(@RequestParam("language") String language) {
 
