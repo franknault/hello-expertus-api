@@ -9,19 +9,12 @@ import org.json.JSONArray;
 import org.springframework.stereotype.Component;
 
 /**
- * Class to access the Google Translate API. Adapted to be a singleton.
+ * Class to access Google Translate API's limited version.
  *
- * From : http://archana-testing.blogspot.com/2016/02/calling-google-translation-api-in-java.html
+ * Source : http://archana-testing.blogspot.com/2016/02/calling-google-translation-api-in-java.html
  */
+@Component
 public class Translator {
-
-    private static Translator instance = new Translator();
-
-    private Translator(){}
-
-    public static Translator getInstance(){
-        return instance;
-    }
 
     public String callUrlAndParseResult(String langFrom, String langTo, String word) throws Exception {
 

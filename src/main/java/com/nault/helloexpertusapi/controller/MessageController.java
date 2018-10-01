@@ -1,5 +1,6 @@
 package com.nault.helloexpertusapi.controller;
 
+import com.nault.helloexpertusapi.Configuration;
 import com.nault.helloexpertusapi.model.Message;
 import com.nault.helloexpertusapi.service.IMessageService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +27,6 @@ public class MessageController {
     @CrossOrigin(origins = "https://hello-expertus-web.herokuapp.com")
     @GetMapping("/api/message")
     public Message getMessage(@RequestParam("language") String language) {
-
         return messageService.findByLanguage(language);
     }
 }

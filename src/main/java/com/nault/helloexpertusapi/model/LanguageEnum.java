@@ -3,6 +3,8 @@ package com.nault.helloexpertusapi.model;
 /**
  * Enumeration for common language supported by Google Translate with the name and their respective ISO 639-1 codes.
  * Source : https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+ *
+ * This enum represents the data in the DB.
  */
 public enum LanguageEnum {
     FRENCH("fr"),
