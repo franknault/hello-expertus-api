@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import javax.annotation.Resource;
 
 /**
- * Represent the strategy context. By default, it uses the GoogleApiStrategy.
+ * Represent the strategy context. By default, it uses the CacheStrategy.
  */
 @Component
 public class PersistanceContext {
